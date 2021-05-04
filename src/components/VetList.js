@@ -32,7 +32,7 @@ class VetList extends Component{
     }
 
     addVisit = (pet, date, reason, followUp) => {
-        axios.post(`/api/visits`, {pet, date,reason, followUp})
+        axios.post(`/api/visits`, {pet, date, reason, followUp})
         .then((res) => {
             this.setState({ visitArray: res.data});
         })
@@ -52,6 +52,7 @@ class VetList extends Component{
     }
 
     render(){
+        console.log(this.state)
         return(
             <div>
                 <AddVisit addVisit = {this.addVisit}/>
