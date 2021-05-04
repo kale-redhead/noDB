@@ -37,9 +37,37 @@
   }
 }
 
+body {
+  background-color: rosybrown;
+}
+
 .visit {
   background-color: palevioletred;
   margin: 50px;
   width: 90%;
-  height: 50px;
+}
+
+input {
+  margin: 5px;
+  background-color: pink;
+}
+
+button {
+  margin: 5px;
+  background-color: palevioletred;
+}
+
+.visit p {
+  display: inline;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.button1 {
+  margin-right: 0;
+}
+
+.button2 {
+  align-items: flex-end;
 }

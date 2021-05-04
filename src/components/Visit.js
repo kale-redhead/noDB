@@ -27,28 +27,29 @@ class Visit extends Component{
         return this.state.editMode ? (
             <div className = 'visit'>
                 {}
-                <input 
-                    value = {this.state.title}
-                    onChange = {(e) => this.handleFollowUp(e.target.value)}/>
+                <input
+                    value = {this.state.followUp}
+                    onChange = {(e) => this.handleFollowUp(e.target.value)}
+                    placeholder = 'Enter New Follow Up Visit Date'/>
                 {}
                 <button onClick = {this.handleSave}>Save</button>
             </div>
         ) : (
             <div className = 'visit'>
                 {}
-                <p>Pet Name: {this.props.visit.pet}</p>
-                <p>Date: {this.props.visit.date}</p>
-                <p>Reason: {this.props.visit.reason}</p>
-                <p>Follow-up Visit: {this.props.visit.followUp}</p>
+                <p>{this.props.visit.date}</p>
+                <p>{this.props.visit.pet}</p>
+                <p>{this.props.visit.reason}</p>
+                <p>Next Vet Visit: {this.props.visit.followUp}</p>
 
                 {}
-                <button 
+                <button className = 'button1'
                 onClick = {() => this.props.deleteVisit(this.props.visit.id)}>
                     Delete Visit
                 </button>
 
                 {}
-                <button onClick = {this.toggleEdit}>Edit</button>
+                <button className = 'button2' onClick = {this.toggleEdit}>Edit</button>
             </div>
         )
     }
