@@ -38,18 +38,21 @@
 }
 
 body {
-  background-color: rosybrown;
+  background-color: rgb(150, 133, 133);
 }
 
 .visit {
-  background-color: palevioletred;
+  background-color: rgb(102, 77, 85);
   margin: 50px;
   width: 90%;
+  display: flex;
+  border-radius: 20px;
 }
 
 input {
   margin: 5px;
   background-color: pink;
+  font-family: drugs;
 }
 
 button {
@@ -65,9 +68,9 @@ button {
 }
 
 .button1 {
-  margin-right: 0;
+  padding: 20px;
 }
 
 .button2 {
-  align-items: flex-end;
+  padding: 20px;
 }
