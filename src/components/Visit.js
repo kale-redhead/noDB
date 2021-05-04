@@ -29,7 +29,7 @@ class Visit extends Component{
                 {}
                 <input 
                     value = {this.state.title}
-                    onchange = {(e) => this.handleFollowUp(e.target.value)}/>
+                    onChange = {(e) => this.handleFollowUp(e.target.value)}/>
                 {}
                 <button onClick = {this.handleSave}>Save</button>
             </div>
